@@ -14,12 +14,13 @@ if (switchActive) {
             
             <h2>Switch</h2>
             {switchActive ?
-            <p onClick={() => setSwitchActive(true)}>Turn On</p>:
-            <p onClick={() => setSwitchActive(false)}>Turn Off</p>
+            <p>On</p>:
+            <p>Off</p>
             }
-            <button onClick={() => setSwitchActive(true)}>ON</button>
-            <button onClick={() => setSwitchActive(false)}>OFF</button>
-            
+            {switchActive ?
+            <button onClick={() => setSwitchActive(false)}>TURN OFF</button>:
+            <button onClick={() => setSwitchActive(true)}>TURN ON</button>
+            }
         </div>
     );
 }
