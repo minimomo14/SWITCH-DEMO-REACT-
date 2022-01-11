@@ -1,0 +1,17 @@
+.Switch h1 {
+    color: purple;
+}
+.Switch {
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    width: 200px;
+}
+.blue {
+    background-color: cornflowerblue;
+}
